@@ -1,0 +1,87 @@
+:root {
+    background-color: #FEEBE7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #FEEBE7;
+}
+.navegacion {
+    background-color: #EFEAE5;
+      height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+.menu-navegacion {
+    background-color: #EFEAE5;
+}
+.contenedor-principal {
+    width: 100%;
+    position: relative;
+}
+
+.imagen-bienvenida {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    
+}
+.contenido-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.imagen-bienvenida::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 35);
+}
+.titulo-bienvenida {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #232E75;
+}
+.descripcion-bienvenida {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffff;
+}
+.seccion-destacados {
+    text-align: center;
+}
+.contenido-destinos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.destinos-destacados {
+    width: 250px;
+}
+.imagen-destacado  {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    
+}
+.destinos-destacados p {
+    margin-top: 15px;
+}
