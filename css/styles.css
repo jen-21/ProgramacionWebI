@@ -1,15 +1,16 @@
 :root {
-    background-color: #FEEBE7;
+    background-color: #F3E9DC;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #FEEBE7;
+    
+    color:#5C4632;
 }
 .navegacion {
-    background-color: #EFEAE5;
+    background-color: #FAF7F2;
       height: 70px;
 
     display: flex;
@@ -19,11 +20,21 @@ body {
     padding: 0 50px;
 }
 .menu-navegacion {
-    background-color: #EFEAE5;
+    background-color: #FAF7F2;
 }
 .contenedor-principal {
     width: 100%;
     position: relative;
+    overflow: hidden;
+}
+.contenedor-principal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 77, 54, 0.15);
 }
 
 .imagen-bienvenida {
@@ -38,19 +49,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
     text-align: center;
     color: #fff;
-    z-index: 1;
+    z-index: 2;
 }
-.imagen-bienvenida::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 35);
-}
+
 .titulo-bienvenida {
     font-size: 48px;
     font-weight: bold;
@@ -60,10 +64,12 @@ body {
 .descripcion-bienvenida {
     font-size: 18px;
     line-height: 1.6;
-    color: #ffff;
+    color: #232E75;
 }
 .seccion-destacados {
     text-align: center;
+    color: #232E75;
+    background-color: #F3E9DC;
 }
 .contenido-destinos {
     display: flex;
@@ -80,8 +86,108 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 10px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
+}
+.imagen-destacado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .destinos-destacados p {
     margin-top: 15px;
+}
+.lema {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #FAF7F2;
+    color:#232E75;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #232E75;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.datos-honduras {
+    text-align: center;
+    margin:0;
+    padding: 60px 40px;
+    background-color: #F3E9DC;
+    color:#232E75;
+}
+.informacion-honduras {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #F3E9DC;
+
+}
+
+.datos  {
+    width: 50%;
+    text-align:center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #F3E9DC;
+}
+.datos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.datos ul {
+    
+    text-align: left;
+}
+.contacto {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #444D36;
+    color:#edeef1;
+}
+.contenido-redes {
+    text-align: center;
+    color: #edeef1;
+    justify-content: center;
+    padding: 20px;
+    background-color: #444D36;
+}
+.redes-sociales {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #444D36;
+}
+.redes {
+   width: auto;
+   height: auto;
+   
+
+   
+}
+.icono-redes {
+    width: 50px;
+    height: 50px;
+    object-fit:cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    
+
+    
+}
+.icono-redes:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.pie-pagina {
+    text-align: center;
+    padding: 20px;
+    background-color: #444D36;
+    color:#edeef1;
 }
