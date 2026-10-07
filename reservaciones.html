@@ -42,16 +42,16 @@
                 <div class="formulario-reservacion">
                     <h3>Realiza tu reservacion</h3>
                     <form>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="nombre">Nombre Completo de Titular:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80" placeholder="Escribe tu nombre Completo">
                         
                         <label for="telefono">Telefono</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}" placeholder="Ejemplo: xxxxxxxx">
 
-                        <label for="correo">Correo:</label>
-                        <input type="email" id="correo" name="correo" required>
+                        <label for="correo">Correo Electronico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
 
-                        <label for="destino">Selecciona tu Destino:</label>
+                        <label for="destino">Circuito Turistico o destino deseado:</label>
                         <select id="destino" name="destino" required>
                             <option value="">Selecciona un Destino:</option>
 
@@ -63,27 +63,69 @@
 
                             <option value="parque">Parque Aurora</option>
                         </select>
-                        <label for="fecha">Fecha de visita:</label>
-                        <input type="date" id="date" name="date" required>
+                        <label for="fecha-inicio">Fecha pevista de inicio:</label>
+                        <input type="date" id="fecha-inicio" name="fecha-inicio" required>
 
-                        <label for="personas">Numero de personas:</label>
-                        <input type="number" id="personas" name="personas" min="1" max="20" required>
+                        <label for="fecha-retorno">Fecha pevista de retorno:</label>
+                        <input type="date" id="fecha-retorno" name="fecha-retorno" required>
 
-                        <label for="tipo-visita">Tipo de visita:</label>
+                        <label for="adulto">Numero de Adultos:</label>
+                        <input type="number" id="adulto" name="adulto" min="1" max="20" required>
 
-                        <select id="tipo-visita" name="tipo-visita" required>
-                            <option value="">Selecciona un Destino:</option>
+                        <label for="menores">
+                        Número de menores:
+                        </label>
 
-                            <option value="copan">Visita Cultural</option>
+                        <input type="number" id="menores" name="menores" min="0" max="20"
+                        required>
 
-                            <option value="roatan">Aventura</option>
+                        <label for="hospedaje">Nivel de servicio o tipo de hopedaje</label>
 
-                            <option value="valle">Naturaleza</option>
+                        <select id="hospedaje" name="hospedaje" required>
+                            <option value="">Selecciona una opcion:</option>
 
-                            <label for="comentario">Comentarios</label>
+                            <option value="">cabaña</option>
 
-                            <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu comentario aqui" required></textarea>
+                            <option value="">Hotel colonial</option>
+
+                            <option value="">Campamento de montaña</option>
+                        
                         </select>
+                        <label >Necesidades especiales</label>
+                        <div class="opciones-reservacion">
+                            <label>
+                                <input type="checkbox" name="guia" value="si">Solicito guia Turistica
+                            </label>
+
+                        </div>
+                        <label for="comentarios">Comentarios o solicitudes Especiales</label>
+
+                        <textarea id="comentarios" name="comentarios" rows="5" maxlength="500" placeholder="Escribe aqui cualquier solicitud"></textarea>
+
+                        <div class="compromisos">
+
+                        <p>
+                            <strong>Compromiso del visitante</strong>
+                        </p>
+
+                        <label>
+                            <input type="checkbox"
+                                name="conservacion"
+                                required>
+                            Me comprometo a respetar las normas de conservación
+                            ecológica durante mi visita.
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                name="patrimonio"
+                                required>
+                            Me comprometo a proteger y respetar el patrimonio
+                            cultural e histórico de Honduras.
+                        </label>
+
+                    </div>
+
 
                         <button type="submit" class="boton">Confirmar Reservacion</button>
 
