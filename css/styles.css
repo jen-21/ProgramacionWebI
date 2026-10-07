@@ -369,3 +369,150 @@ body {
     border: none;
     cursor: pointer;
 }
+
+/*Pagina Reservaciones*/
+.seccion-reservaciones{
+    padding: 60px 50px;
+    background-color: #F3E9DC;
+    text-align: center;
+    color: #232E75;
+}
+.seccion-reservaciones p{
+    max-width: 750px;
+    margin: 0 auto 40px;
+    color: #5C4632;
+    line-height: 1.6;
+}
+
+/*Formulario*/
+.contenedor-reservacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.formulario-reservacion{
+    width: 70%;
+    max-width: 800px;
+    padding: 35px;
+    background-color: #FAF7F2;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+.formulario-reservacion h3{
+    color:#444D36;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.formulario-reservacion form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.formulario-reservacion label{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #5C4632;
+    font-weight: bold;
+}
+.formulario-reservacion input, .formulario-reservacion select, .formulario-reservacion textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #D8C3A5;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #F3E9DC;
+    color: #5C4632;
+}
+.formulario-reservacion input:focus,
+.formulario-reservacion select:focus,
+.formulario-reservacion textarea:focus {
+    outline: none;
+    border: 2px solid #444D36;
+}
+
+.formulario-reservacion textarea {
+    resize: vertical;
+}
+
+.formulario-reservacion .boton {
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+
+/* DESTINOS */
+
+.destinos-reservacion {
+    padding: 60px 50px;
+    background-color: #FAF7F2;
+    text-align: center;
+    color: #232E75;
+}
+
+.destino-reservacion > p {
+    color: #5C4632;
+    margin-bottom: 35px;
+}
+
+.destinos-disponibles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.destino-reservacion {
+    width: 220px;
+    background-color: #F3E9DC;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destino-reservacion:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.destino-reservacion img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.destino-reservacion h3 {
+    color: #232E75;
+    margin: 15px 10px 5px;
+}
+
+.destino-reservacion p {
+    color: #5C4632;
+    font-size: 14px;
+    padding: 0 10px 15px;
+}
+
+
+/* CONTACTO */
+
+.contacto-reservacion {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #444D36;
+    color: #FAF7F2;
+}
+
+.contacto-reservacion h2 {
+    color: #FAF7F2;
+}
+
+.contacto-reservacion p {
+    color: #FAF7F2;
+    margin-bottom: 25px;
+}

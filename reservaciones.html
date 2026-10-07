@@ -22,5 +22,145 @@
         </ul>
     </nav>
     </div>
+
+    <main>
+         <section class="contenedor-principal">
+            <img src="img/portada1.jpg" alt="Imagen de bienvenida" class="imagen-bienvenida">
+            <div class="contenido-principal">
+                <h2 class="titulo-bienvenida">¿Listo para Resevar?</h2>
+
+            <p class="descripcion-bienvenida"> Planifica tu proxima aventura y descubre Honduras</p>
+
+            </div>
+        </section>
+
+        <section class="seccion-reservaciones">
+            <h2>Planifica tu viaje</h2>
+            <p>Elige tu destino favorito, selecciona la fecha de tu visita y completa el formulario para empezar tu proxima aventura por Honduras.</p>
+            
+            <div class="contenedor-reservacion">
+                <div class="formulario-reservacion">
+                    <h3>Realiza tu reservacion</h3>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <label for="destino">Selecciona tu Destino:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="">Selecciona un Destino:</option>
+
+                            <option value="copan">Parque Arqueológico de Copán Ruinas</option>
+
+                            <option value="roatan">Roatan</option>
+
+                            <option value="valle">Valle de Angeles</option>
+
+                            <option value="parque">Parque Aurora</option>
+                        </select>
+                        <label for="fecha">Fecha de visita:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="personas">Numero de personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" max="20" required>
+
+                        <label for="tipo-visita">Tipo de visita:</label>
+
+                        <select id="tipo-visita" name="tipo-visita" required>
+                            <option value="">Selecciona un Destino:</option>
+
+                            <option value="copan">Visita Cultural</option>
+
+                            <option value="roatan">Aventura</option>
+
+                            <option value="valle">Naturaleza</option>
+
+                            <label for="comentario">Comentarios</label>
+
+                            <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu comentario aqui" required></textarea>
+                        </select>
+
+                        <button type="submit" class="boton">Confirmar Reservacion</button>
+
+
+
+
+
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="destinos-reservacion">
+
+            <h2>Nuestros destinos</h2>
+
+            <p>
+                Elige uno de nuestros destinos y prepárate para vivir
+                una experiencia inolvidable.
+            </p>
+
+            <div class="destinos-disponibles">
+                <div class="destino-reservacion">
+                    <img src="img/destacada1.jpg" alt="copan"> 
+
+                    <h3>Parque Arqueológico de Copán Ruinas</h3>
+                    <p>Historia, Cultura y Arqueologia</p>
+
+                </div>
+                <div class="destino-reservacion">
+                    <img src="img/destacada2.jpg" alt="Roatan"> 
+
+                    <h3>Roatan</h3>
+                    <p>Playa, Naturaleza y Aventura</p>
+
+                </div>
+
+                <div class="destino-reservacion">
+                    <img src="img/valle-angeles.jpg" alt="valle"> 
+
+                    <h3>Valle de Angeles</h3>
+                    <p>Naturaleza, Gastronomia y Artesania</p>
+
+                </div>
+
+                <div class="destino-reservacion">
+                    <img src="img/parque.jpg" alt="parque"> 
+
+                    <h3>Parque Aurora</h3>
+                    <p>Naturaleza, Familia y Diversion</p>
+
+                </div>
+            </div>
+        </section>
+
+         <section class="contacto-reservacion">
+
+            <h2>¿Necesitas más información?</h2>
+
+            <p>
+                Si tienes alguna pregunta sobre nuestros destinos
+                o reservaciones, no dudes en contactarnos.
+            </p>
+
+            <a href="contacto.html" class="boton">
+                Contáctanos
+            </a>
+
+        </section>
+
+
+    </main>
+     <footer class="pie-pagina">
+        <p>&copy; 2026 Conoce tu Tierra. Todos los derechos reservados.</p>
+
+    </footer>
     
 </body>
