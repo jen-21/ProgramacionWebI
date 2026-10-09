@@ -9,10 +9,29 @@ body {
     
     color:#5C4632;
 }
+/*LOGO*/
+.logo{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 55px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    display: block;
+}
 /*Navegacion*/
 .navegacion {
     background-color: #FAF7F2;
-      height: 70px;
+    height: 70px;
 
     display: flex;
     align-items: center;
@@ -22,6 +41,20 @@ body {
 }
 .menu-navegacion {
     background-color: #FAF7F2;
+}
+.menu-navegacion a{
+    color: #5C4632;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3 ease;
+}
+.menu-navegacion a:hover{
+    color:#444D36;
+}
+.menu-navegacion a.activo{
+    color:#444D36;
+    font-weight: bold;
 }
 .contenedor-principal {
     width: 100%;
@@ -728,7 +761,7 @@ body {
     margin-bottom: 20px;
 }
 
-.etnias-cultura > p {
+.etnias-cultura  p {
     max-width: 850px;
     margin: 0 auto 40px;
     color: #5C4632;
@@ -774,4 +807,73 @@ body {
     font-size: 14px;
     line-height: 1.5;
     padding: 0 15px 20px;
+}
+.gastronomia-cultura{
+    padding: 60px 50px;
+    background-color: #F3E9DC;
+    text-align: center;
+}
+.gastronomia-cultura h2{
+    color: #232E75;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.gastronomia-cultura p{
+     max-width: 850px;
+    margin: 0 auto 40px;
+    color: #5C4632;
+    line-height: 1.6;
+}
+.contenedor-gastronomia{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.tarjeta-gastronomia{
+    width: 250px;
+    background-color: #FAF7F2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-gastronomia:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+}
+.tarjeta-gastronomia img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    
+}
+.tarjeta-gastronomia h3{
+    color: #232E75;
+    margin: 18px 10px 10px;
+}
+.tarjeta-gastronomia p{
+    color: #5C4632;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 15px 20px;
+}
+.cierre-cultura{
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #444D36;
+    color: #FAF7F2;
+}
+.cierre-cultura h2{
+    color:#FAF7F2;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.cierre-cultura p{
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #FAF7F2;
+    line-height: 1.7;
 }
